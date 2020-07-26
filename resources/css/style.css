@@ -1,0 +1,121 @@
+* {
+    color: seashell;
+    opacity: 0.9;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: black;
+}
+
+main,
+footer {
+    position: relative;
+    top: 69px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.headings {
+    justify-content: space-around;
+}
+
+/* Header section */
+
+header {
+    z-index: 100;
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+header #logo {
+    height: 50px;
+    padding-left: 10px;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+header nav a {
+    margin: 10px;
+    text-decoration: underline;
+}
+
+/* Mission section */
+#mission {
+    width: 1200px;
+    height: 700px;
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-size: cover;
+}
+
+#mission .headings {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+/* Featured Tea section */
+#featured-tea {
+    width: 1000px;
+    margin: 80px 0;
+}
+
+#featured-tea .headings {
+    height: 100px;
+}
+
+#featured-tea img {
+    width: 300px;
+    height: 200px;
+    margin: 20px 15px 10px 15px;
+}
+
+/* Locations section */
+
+#locations {
+    width: 1200px;
+    height: 550px;
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+    background-size: cover;
+}
+
+#locations * {
+    opacity: 1;
+    color: rgba(255, 245, 238, 0.9);
+}
+
+#locations .location {
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
+    margin: 15px 20px 10px 20px;
+    background-color: black;
+}
+
+/* Contact section */
+#contact .headings {
+    height: 200px;
+}
+
+/* Footer  */
+footer {
+    text-align: left;
+    margin: 20px;
+}
